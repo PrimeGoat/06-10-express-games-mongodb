@@ -94,8 +94,8 @@ const quotes = [
 ];
 
 const quote = function(req, res, next) {
-    console.log(quotes[Math.floor(Math.random()*quotes.length)]);
-    next();
+    return quotes[Math.floor(Math.random()*quotes.length)];
+    //next();
 }
 
 module.exports = quote;
